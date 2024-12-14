@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="moimsa.backend.mem.repository.MemberDAO">
+
+    <!-- 모든 회원 정보를 가져오는 SQL -->
+    <select id="getAllMembers" resultType="moimsa.backend.mem.model.MemberVO">
+        SELECT id, name FROM MM_MEMBER
+    </select>
+
+</mapper>
